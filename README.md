@@ -68,19 +68,6 @@ Pruebas_Selenium_Python/
 └─ README.md
 ```
 
-## Tips y buenas prácticas
-
-- Usa `WebDriverWait` + `expected_conditions` para evitar dependencias rígidas de `time.sleep`.
-- Valida `document.readyState == "complete"` para confirmar cargas antes de tomar evidencia.
-- Mantén XPaths simples y con fallback cuando el DOM cambia entre páginas (ej. `(//a)[123]`).
-- Si el sitio muestra banners/overlays, considera cerrar el overlay antes de interactuar.
-
-## Próximos pasos (opcionales)
-
-- Añadir modo headless configurable desde línea de comandos.
-- Generar también un reporte CSV para integración con otras herramientas.
-- Resumen por ejecución (totales PASS/FAIL) al final del Excel.
-
 ---
 
 Resumen: Se implementaron CP-01..CP-20 con esperas robustas, evidencia visual controlada y reporter Excel único para todas las suites. Los scripts comparten utilidades comunes y mantienen la independencia entre casos mediante `back()` y recarga de home.
